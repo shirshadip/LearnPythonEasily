@@ -1,0 +1,191 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    height: 100vh;
+    
+}
+.head{
+    background-color: #3a0061;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 2px;
+}
+.widgets{
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    gap: 2em;
+    background-color: rgb(237, 228, 173);
+    color: brown;
+}
+.buttons{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+
+
+
+}
+.btn{
+    background-color: #f0f0f0;
+    padding: 1em;
+    border-radius: 5px;
+    height: 100px;
+    width: 150px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: rgb(24, 25, 26);
+
+}
+.btn:hover{
+    background-color: #d4d4d4;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    color: lightslategray;
+}
+.footer{
+    background-color: #ffffff;
+    color: rgb(86, 85, 85);
+    text-align: center;
+    padding: 1em 0;
+    border-radius: 2px;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+}
+a {
+  /* color: #333;   */
+  color: inherit;
+  text-decoration: none;
+}
+.code-block {
+  position: relative;
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding: 12px;
+  font-family: Consolas, monospace;
+  width: fit-content;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 12px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.blog{
+   
+    padding: 0 1em;
+    background-color: blanchedalmond;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    
+    /* text-align: 20px; */
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  position: fixed;
+  
+}
+
+.dropdown-btn {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #eee;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+.suggestion {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 1.5rem 1.8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.suggestion h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+.suggestion-text {
+  margin-bottom: 1.2rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.form-container {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.form-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+[data-theme="dark"] .suggestion {
+  background: #121212;
+  border-color: #2a2a2a;
+}
+
+[data-theme="dark"] .suggestion-text {
+  color: #aaa;
+}
+
+[data-theme="dark"] .form-container {
+  border-color: #333;
+}
+@media (max-width: 600px) {
+  .form-container {
+    height: 320px;
+  }
+}
+

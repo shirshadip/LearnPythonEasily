@@ -1,0 +1,43 @@
+<div class="code-block">
+  <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+
+  <pre><code>
+print("Hello, World!")
+for i in range(3):
+    print(i)
+  </code></pre>
+</div>
+
+css 
+
+
+
+.code-block {
+  position: relative;
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding: 12px;
+  font-family: Consolas, monospace;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 12px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+JS
+
+
+function copyCode(button) {
+  const code = button.nextElementSibling.innerText;
+  navigator.clipboard.writeText(code);
+
+  button.innerText = "Copied!";
+  setTimeout(() => {
+    button.innerText = "Copy";
+  }, 1500);
+}
