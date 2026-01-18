@@ -20,28 +20,29 @@ body {
 .widgets{
     justify-content: center;
     align-items: center;
-    height: 90vh;
-    gap: 2em;
     background-color: rgb(237, 228, 173);
     color: brown;
+    height:300px;
 }
 .buttons{
     display: flex;
+    margin-top: 2em;
     gap: 1em;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
 
 
 
 }
 .btn{
     background-color: #f0f0f0;
-    padding: 1em;
+    padding: 5px 10px;
     border-radius: 5px;
     height: 100px;
     width: 150px;
     text-align: center;
+    justify-content: center;
+    text-justify: center;
     border-radius: 18px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
