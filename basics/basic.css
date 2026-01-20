@@ -1,0 +1,17 @@
+.bsicbtn{
+     
+  padding: 10px 20px;
+  background: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.basicbtn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+

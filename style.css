@@ -190,3 +190,21 @@ a {
   }
 }
 
+.next-btn {
+  padding: 12px 24px;
+  background: #10b981;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.next-btn:hover {
+  background: #0ea45c;
+  transform: translateY(-2px);
+}
