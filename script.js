@@ -7,3 +7,4 @@ function copyCode(button) {
     button.innerText = "Copy";
   }, 1500);
 }
+
