@@ -8,3 +8,21 @@ function copyCode(button) {
   }, 1500);
 }
 
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("animate-in");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.25 }
+);
+
+document.querySelectorAll(".suggestion").forEach(el => {
+  observer.observe(el);
+});
+
+
+
